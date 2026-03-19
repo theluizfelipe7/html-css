@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>peseudo-classes</title>
+    <style>
+        div {
+            display: inline-block;
+            background-color: lightgrey;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+        div > p {
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            border: 2px solid black;
+            padding: 20px;
+        }
+
+        div#d1:hover {
+            background-color: rgb(8, 250, 0);
+            
+        }
+        div#d2:hover {
+            background-color: rgb(255, 0, 0);
+        }
+        div#d3:hover {
+            background-color: rgb(0, 0, 255);
+        }
+        div#info > p {
+            display: none;
+            
+        }
+        div#info:hover > p {
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            border: 2px solid black;
+            padding: 20px;
+
+        }
+    
+    </style>
+</head>
+<body>
+    <div id="info">
+        <p>home</p>
+        <p>about</p>
+        <p>contact</p>
+        <p>settings</p>
+    </div>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+    
+    
+</body>
+</html>
